@@ -269,7 +269,26 @@ namespace G_NET_12_OOP03
 
             #endregion
 
+            #region Q04
+            /*
+            class Program
+        {
+            static void Main()
+            {
+                Cinema cinema = new Cinema("Galaxy Cinema");
+                cinema.OpenCinema();
 
+                cinema.AddTicket(new StandardTicket("Inception", 120, "A-5"));
+                cinema.AddTicket(new VIPTicket("Avengers", 200, true));
+                cinema.AddTicket(new IMAXTicket("Dune", 180, false));
+
+                cinema.PrintAllTickets();
+                cinema.CloseCinema();
+            }
+        }
+
+            */
+            #endregion
 
 
     }
