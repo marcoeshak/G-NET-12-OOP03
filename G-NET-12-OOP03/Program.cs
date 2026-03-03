@@ -192,7 +192,78 @@ namespace G_NET_12_OOP03
 
             #endregion
 
+            #region Q03
+            // بعمل كلاس باسم Projector.cs
 
+            /*
+            public sealed class Projector
+        {
+            public void Start()
+            {
+                Console.WriteLine("Projector started.");
+            }
+
+            public void Stop()
+            {
+                Console.WriteLine("Projector stopped.");
+            }
+        }
+            */
+
+            //========= 
+
+            // بعمل كلاس جديد باسم Cinema.cs
+            /*
+            public class Cinema
+        {
+            public string CinemaName { get; set; }
+
+            private Projector projector = new Projector();
+            private Ticket[] tickets = new Ticket[20];
+
+            public Cinema(string name)
+            {
+                CinemaName = name;
+            }
+
+            public void OpenCinema()
+            {
+                Console.WriteLine("========== Cinema Opened ==========");
+                projector.Start();
+            }
+
+            public void CloseCinema()
+            {
+                Console.WriteLine("\n========== Cinema Closed ==========");
+                projector.Stop();
+            }
+
+            public void AddTicket(Ticket t)
+            {
+                for (int i = 0; i < tickets.Length; i++)
+                {
+                    if (tickets[i] == null)
+                    {
+                        tickets[i] = t;
+                        break;
+                    }
+                }
+            }
+
+            public void PrintAllTickets()
+            {
+                Console.WriteLine("\n========== All Tickets ==========");
+                foreach (Ticket t in tickets)
+                {
+                    if (t != null)
+                        Console.WriteLine(t);
+                }
+
+                Console.WriteLine("\n========== Statistics ==========");
+                Console.WriteLine($"Total Tickets Created: {Ticket.GetTotalTickets()}");
+            }
+        }
+            */
 
 
 
