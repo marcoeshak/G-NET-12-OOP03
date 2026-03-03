@@ -145,8 +145,52 @@ namespace G_NET_12_OOP03
             */
 
             #endregion
-            
 
+            #region Q02..
+            //بعمل كلاس جديد باسم VIPTicket.cs
+            /*
+            public class VIPTicket : Ticket
+        {
+            public bool LoungeAccess { get; set; }
+            public decimal ServiceFee { get; } = 50;
+
+            public VIPTicket(string movie, decimal price, bool lounge)
+                : base(movie, price)
+            {
+                LoungeAccess = lounge;
+            }
+
+            public override string ToString()
+            {
+                return base.ToString()
+                     + $" | Lounge: {(LoungeAccess ? "Yes" : "No")}"
+                     + $" | Service Fee: {ServiceFee} EGP";
+            }
+        }
+            */
+            //=======================
+
+            //بعمل كلاس باسم IMAXTicket.cs
+            /*
+            public class IMAXTicket : Ticket
+        {
+            public bool Is3D { get; set; }
+
+            public IMAXTicket(string movie, decimal price, bool is3D)
+                : base(movie, is3D ? price + 30 : price)
+            {
+                Is3D = is3D;
+            }
+
+            public override string ToString()
+            {
+                return base.ToString() + $" | IMAX 3D: {(Is3D ? "Yes" : "No")}";
+            }
+        }
+            */
+
+
+            #endregion
 
 
 
@@ -157,6 +201,6 @@ namespace G_NET_12_OOP03
 
 
 
-        }
+    }
     }
 }
